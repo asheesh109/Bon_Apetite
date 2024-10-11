@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- Title -->
+    <title>DBON APETITE -  | Receipe earch</title>
+
+    <!-- logo-->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+/* Recipe List Styles */
+#recipeList {
+
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Individual Recipe Item Styles */
+#recipeList div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Separator between items */
+}
+
+#recipeList div:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+/* Link Styles */
+#recipeList a {
+    font-size: 20px;
+    color: #039b00; /* Change to a nice color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+}
+
+#recipeList a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+/* No Results Message */
+#recipeList p {
+    color: #e76f51; /* Color for no results message */
+    font-style: italic; /* Italic style for emphasis */
+    text-align: center; /* Center the text */
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <i class="circle-preloader"></i>
+        <img src="img/core-img/salad.png" alt="">
+    </div>
+
+    <!-- Search Wrapper -->
+    <div class="search-wrapper">
+        <!-- Close Btn -->
+        <div class="close-btn"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="post">
+                        <input type="search" name="search" placeholder="Type any keywords...">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Top Header Area -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-between">
+                    <!-- Breaking News -->
+                    <div class="col-12 col-sm-6">
+                        <div class="breaking-news">
+                            <div id="breakingNewsTicker" class="ticker">
+                                <ul>
+                                    <li><a href="#">Hello !</a></li>
+                                    <li><a href="#">Welcome to BON APETITE Family.</a></li>
+                                    <li><a href="#">Hello Delicious!</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Social Info -->
+                    <div class="col-12 col-sm-6">
+                        <div class="top-social-info text-right">
+                            <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navbar Area -->
+        <div class="delicious-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="deliciousNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                             <!-- Nav Start -->
+                             <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="blog-post.html">Blog Post</a></li>
+                                            <li><a href="receipe-post.html">Receipe Post</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                           
+                                           
+                                        </ul>
+                                    </li>
+                                   
+                                    </li>
+                                    <li><a href="receipe-post.html">Receipies</a></li>
+                                    <li><a href="tips.html">Tips & Tricks</a></li>
+                                    <li><a href="login.html">Log In</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Newsletter Form -->
+                                <div class="search-btn">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Breadcumb Area Start ##### -->
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/Recipe-post-cover.png);">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12">
+                    <div class="breadcumb-text text-center">
+                        <h2>Recipe</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### Breadcumb Area End ##### -->
+
+   <div class="receipe-post-area section-padding-80">
+  <div class="receipe-post-search mb-80">
+        <div class="container">
+            <form id="recipeSearchForm">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        <select name="select1" id="select1">
+                            <option value="all">All Categories</option>
+                            <option value="south indian">South Indian</option>
+                            <option value="north indian">North Indian</option>
+                            <option value="east indian">East Indian</option>
+                            <option value="west indian">West Indian</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <select name="select2" id="select2">
+                            <option value="all">All Meal Types</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="snacks">Snacks</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="desert">Desert</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        <input type="search" name="search" placeholder="Search Recipes">
+                    </div>
+                    <div class="col-12 col-lg-3 text-right">
+                        <button type="submit" class="btn delicious-btn">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="recipeList"></div>
+</div>
+
+
+        <!--instagram-->
+     
+
+        <div style="padding-top: 30px;" class="follow-us-instagram">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 style="font-size: 45px; text-align: center;" > Follow Us On Instagram </h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Instagram Feeds -->
+            <div class="insta-feeds d-flex flex-wrap">
+                <!-- Single Insta Feeds -->
+                <div class="single-insta-feeds">
+                    <img src="img/bg-img/f8.png" alt="">
+                    <!-- Icon -->
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com/leomessi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                
+    
+                <!-- Single Insta Feeds -->
+                <div class="single-insta-feeds">
+                    <img src="img/bg-img/f2.png" alt="">
+                    <!-- Icon -->
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com/leomessi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Single Insta Feeds -->
+                <div class="single-insta-feeds">
+                    <img src="img/bg-img/f5.png" alt="">
+                    <!-- Icon -->
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com/leomessi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Single Insta Feeds -->
+                <div class="single-insta-feeds">
+                    <img src="img/bg-img/f6.png" alt="">
+                    <!-- Icon -->
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com/leomessi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Single Insta Feeds -->
+                <div class="single-insta-feeds">
+                    <img src="img/bg-img/f9.png" alt="">
+                    <!-- Icon -->
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com/leomessi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Single Insta Feeds -->
+                <div class="single-insta-feeds">
+                    <img src="img/bg-img/f4.png" alt="">
+                    <!-- Icon -->
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com/leomessi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Single Insta Feeds -->
+                <div class="single-insta-feeds">
+                    <img src="img/bg-img/f7.png" alt="">
+                    <!-- Icon -->
+                    <div class="insta-icon">
+                        <a href="https://www.instagram.com/leomessi"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ##### Follow Us Instagram Area End ##### -->
+    
+        <!-- ##### Footer Area Start ##### -->
+        <footer class="footer-area">
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="col-12 h-100 d-flex flex-wrap align-items-center justify-content-between">
+                        <!-- Footer Social Info -->
+                        <div class="footer-social-info text-right">
+                            <a href="https://in.pinterest.com/"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://x.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://dribbble.com/"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a href="https://auth.services.adobe.com/en_US/deeplink.html#/social-only"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                            <a href="https://in.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                        <!-- Footer Logo -->
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="img/core-img/logo.png" alt=""></a>
+                        </div>
+                        <!-- Copywrite -->
+                        <p>
+    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">BON APETITE</a>
+    </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <script>
+                const recipes = [
+
+                //south indian
+
+                    { name: "Idli", category: "south indian", mealType: "breakfast", url: "idli.html" },
+                    { name: "Hyderabadi Biryani", category: "south indian", mealType: "lunch", url: "hydrabadibiryani.html" },
+                    { name: "Dosa", category: "south indian", mealType: "breakfast", url: "dosa.html" },
+                    { name: "Daal Vada", category: "south indian", mealType: "breakfast", url: "daalvada.html" },
+                    { name: "sambar", category: "south indian", mealType: "lunch", url: "sambar.html" },
+                    { name: "medu vada", category: "south indian", mealType: "breakfast", url: "meduvada.html" },
+                    { name: "uttapam", category: "south indian", mealType: "breakfast", url: "uttapam.html" },
+                    { name: "coconut chuteny", category: "south indian", mealType: "breakfast", url: "coconutchut.html" },
+                    { name: "pal payasam", category: "south indian", mealType: "desert", url: "palpaysam.html" },
+
+
+                    // maharshtra
+
+                    { name: "modak", category: "west indian", mealType: "desert", url: "modak.html" },
+                    { name: "misal  pav", category: "west indian", mealType: "lunch", url: "misalpav.html" },
+                    { name: "puranpoli", category: "west indian", mealType: "dinner", url: "puranpoli.html" },
+                    { name: "vada pav", category: "west indian", mealType: "snacks", url: "vadapav.html" },
+                    { name: "poha", category: "west indian", mealType: "breakfast", url: "poha.html" },
+                    { name: "thalipith", category: "west indian", mealType: "breakfast", url: "thalipith.html" },
+                    { name: "kheer", category: "west indian", mealType: "desert", url: "kheer.html" },
+                    { name: "aamraspuri", category: "west indian", mealType: "lunch", url: "aamraspuri.html" },
+                    { name: "kanda bhaji", category: "west indian", mealType: "snacks", url: "kandabhaji.html" },
+
+
+                    //kashmir
+
+
+                    { name: "rogan josh", category: "north indian", mealType: "lunch", url: "rojanjosh.html" },
+                    { name: "dum aloo", category: "north indian", mealType: "lunch", url: "dumaloo.html" },
+                    { name: "butter tea", category: "north indian", mealType: "breakfast", url: "buttertea.html" },
+                    { name: "yakhni pulao", category: "north indian", mealType: "lunch", url: "yakhnipulao.html" },
+                    { name: "modur pulao", category: "north indian", mealType: "lunch", url: "modurpulao.html" },
+                    { name: "tabak mazz", category: "north indian", mealType: "dinner", url: "tabakmaz.html" },
+                    { name: "lyodur tschaman", category: "north indian", mealType: "dinner", url: "lyodurtschaman.html" },
+                    { name: "youghurt lamb curry", category: "north indian", mealType: "lunch", url: "youghurtlamb.html" },
+                    { name: "chaman paneer", category: "north indian", mealType: "lunch", url: "chamanpanner.html" },
+
+
+                    //uttar pradesh 
+
+
+                    { name: "litti chokha", category: "north indian", mealType: "dinner", url: "littichokha.html" },
+                    { name: "galouti kebab", category: "north indian", mealType: "dinner", url: "galoutikebab.html" },
+                    { name: "basket chaat", category: "north indian", mealType: "snacks", url: "basketchaat.html" },
+                    { name: "bhindi ka salan", category: "north indian", mealType: "lunch", url: "bhindikasalan.html" },
+                    { name: "lucknowi biryani", category: "north indian", mealType: "lunch", url: "lucknowibiryani.html" },
+                    { name: "awadhi biryani", category: "north indian", mealType: "dinner", url: "awadhibiryani.html" },
+                    { name: "kulfi falooda", category: "north indian", mealType: "desert", url: "kulfifalooda.html" },
+                    { name: "shahi paneer", category: "north indian", mealType: "lunch", url: "shahipaneer.html" },
+                    { name: "muttton kofta", category: "north indian", mealType: "dinner", url: "muttonkofta.html" },
+
+
+                    //delhi
+
+
+                    { name: "samosa", category: "north indian", mealType: "snacks", url: "samosa.html" },
+                    { name: "dahi bhalle", category: "north indian", mealType: "snacks", url: "dahibhalle.html" },
+                    { name: "momos", category: "north indian", mealType: "snacks", url: "momos.html" },
+                    { name: "aloo chaat", category: "north indian", mealType: "snacks", url: "aloochaat.html" },
+                    { name: "pav bhaji", category: "north indian", mealType: "snacks", url: "paavbhaji.html" },
+                    { name: "chole kulche", category: "north indian", mealType: "snacks", url: "cholekulche.html" },
+                    { name: "papdi chaat", category: "north indian", mealType: "snack", url: "papdichaat.html" },
+                    { name: "seekh kebab", category: "north indian", mealType: "dinner", url: "seekhkebab.html" },
+                    { name: "shahi tukda", category: "north indian", mealType: "desert", url: "shahitukda.html" },
+
+
+                    //punjab
+
+
+                    { name: "butter chicken", category: "north indian", mealType: "lunch", url: "butterchicken.html" },
+                    { name: "malai lassi", category: "north indian", mealType: "desert", url: "malailassi.html" },
+                    { name: "chole bhature", category: "north indian", mealType: "snacks", url: "cholebhature.html" },
+                    { name: "paratha", category: "north indian", mealType: "breakfast", url: "paratha.html" },
+                    { name: "daal makhni", category: "north indian", mealType: "lunch", url: "daalmakhni.html" },
+                    { name: "amritsari fish", category: "north indian", mealType: "lunch", url: "amritsarifish.html" },
+                    { name: "sarso da sang", category: "north indian", mealType: "lunch", url: "sarsodasaag.html" },
+                    { name: "makke di roti", category: "north indian", mealType: "breakfast", url: "makkidiroti.html" },
+                    { name: "kada prashad", category: "north indian", mealType: "desert", url: "kadaprashad.html" },
+
+
+
+                    //rajsthan
+
+
+                    { name: "daal baati churma", category: "west indian", mealType: "lunch", url: "daalbatichurma.html" },
+                    { name: "ghevar", category: "west indian", mealType: "desert", url: "ghewar.html" },
+                    { name: "mawa kachori", category: "west indian", mealType: "desert", url: "mawakachori.html" },
+                    { name: "gatte ki sabzi", category: "west indian", mealType: "lunch", url: "gattekisabzi.html" },
+                    { name: "ker sangri", category: "west indian", mealType: "lunch", url: "kersangri.html" },
+                    { name: "churma ladoo", category: "west indian", mealType: "desert", url: "churmaladoo.html" },
+                    { name: "bajra roti", category: "west indian", mealType: "lunch", url: "bajraroti.html" },
+                    { name: "mirchi vada", category: "west indian", mealType: "snacks", url: "mirchivada.html" },
+                    { name: "pyaaz kachori", category: "west indian", mealType: "snacks", url: "pyaazkachori.html" },
+
+
+
+                    // gujrat
+
+
+                    { name: "khaman dhokla", category: "west indian", mealType: "breakfast", url: "dhokla.html" },
+                    { name: "jalebi", category: "west indian", mealType: "desert", url: "jalebi.html" },
+                    { name: "basundi", category: "west indian", mealType: "desert", url: "basundi.html" },
+                    { name: "Gujrati daal", category: "west indian", mealType: "lunch", url: "gujratidaal.html" },
+                    { name: "fafda", category: "west indian", mealType: "snacks", url: "fafda.html" },
+                    { name: "methi thepla", category: "west indian", mealType: "breakfast", url: "methithepla.html" },
+                    { name: "makai no chebdo", category: "west indian", mealType: "snacks", url: "makainochevdo.html" },
+                    { name: "chakli", category: "west indian", mealType: "snacks", url: "chakli.html" },
+                    { name: "kutchi dabheli", category: "west indian", mealType: "snacks", url: "kutchidabeli.html" },
+
+
+                    //west bangal
+
+                    { name: "rasmalai", category: "east indian", mealType: "desert", url: "rasmalai.html" },
+                    { name: "roshogulla", category: "east indian", mealType: "desert", url: "rasgulla.html" },
+                    { name: "aloo posto", category: "east indian", mealType: "lunch", url: "alooposto.html" },
+                    { name: "machor jhol", category: "east indian", mealType: "lunch", url: "machorjhol.html" },
+                    { name: "basanti pulao", category: "east indian", mealType: "lunch", url: "basantipulao.html" },
+                    { name: "kathi roll", category: "east indian", mealType: "snacks", url: "kathiroll.html" },
+                    { name: "mutton biryani", category: "east indian", mealType: "lunch", url: "muttonbiryani.html" },
+                    { name: "chingri malai curry", category: "east indian", mealType: "lunch", url: "kolambi.html" },
+                    { name: "luchi aloo dum", category: "east indian", mealType: "lunch", url: "luchialoodum.html" },
+                   
+
+                    //naan
+                    { name: "naan", category: "north indian", mealType: "lunch", url: "naan.html" },
+
+                ];
+        
+                document.getElementById('recipeSearchForm').onsubmit = function(event) {
+                    event.preventDefault(); // Prevent default form submission
+        
+                    const selectedCategory = document.getElementById("select1").value;
+                    const selectedMealType = document.getElementById("select2").value;
+                    const searchQuery = document.querySelector('input[name="search"]').value.toLowerCase();
+        
+                    const filteredRecipes = recipes.filter(recipe => {
+                        const matchesCategory = selectedCategory === "all" || recipe.category === selectedCategory;
+                        const matchesMealType = selectedMealType === "all" || recipe.mealType === selectedMealType;
+                        const matchesSearch = recipe.name.toLowerCase().includes(searchQuery);
+        
+                        return matchesCategory && matchesMealType && matchesSearch;
+                    });
+        
+                    const recipeListDiv = document.getElementById('recipeList');
+                    recipeListDiv.innerHTML = ''; // Clear previous results
+        
+                    if (filteredRecipes.length > 0) {
+                        filteredRecipes.forEach(recipe => {
+                            const recipeItem = document.createElement('div');
+                            recipeItem.innerHTML = `<a href="${recipe.url}">${recipe.name}</a> (${recipe.category}, ${recipe.mealType})`;
+                            recipeListDiv.appendChild(recipeItem);
+                        });
+                    } else {
+                        recipeListDiv.innerHTML = '<p>No recipes found.</p>';
+                    }
+                };
+            </script>
+            
+        </footer>
+        <!-- ##### Footer Area Start ##### -->
+    
+        <!-- ##### All Javascript Files ##### -->
+        <!-- jQuery-2.2.4 js -->
+        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+        
+        <!-- All Plugins js -->
+        <script src="js/plugins/plugins.js"></script>
+        <!-- Active js -->
+        <script src="js/active.js"></script>
+    </body>
+    
+    </html>
